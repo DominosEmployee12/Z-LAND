@@ -1,0 +1,135 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local GetGuns = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Admin = Instance.new("TextButton")
+local Tptoroom = Instance.new("TextButton")
+local Tptobase = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0677587464, 0, 0.112883434, 0)
+Main.Size = UDim2.new(0, 291, 0, 321)
+Main.Active = true
+Main.Draggable = true
+
+GetGuns.Name = "GetGuns"
+GetGuns.Parent = Main
+GetGuns.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+GetGuns.BorderSizePixel = 0
+GetGuns.Position = UDim2.new(0, 0, 0.267912775, 0)
+GetGuns.Size = UDim2.new(0, 122, 0, 39)
+GetGuns.Font = Enum.Font.SourceSans
+GetGuns.Text = "Get guns"
+GetGuns.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetGuns.TextSize = 20.000
+GetGuns.TextWrapped = true
+GetGuns.MouseButton1Down:connect (function ()
+
+	local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local pos = p1.CFrame
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3876.32251, 58.8810692, -10906.3955, -0.740248322, 5.68546241e-08, 0.672333539, 4.29166853e-08, 1, -3.73112705e-08, -0.672333539, 1.23472099e-09, -0.740248322)
+
+	wait(.5)
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3885.3186, 58.8810692, -10902.7471, -0.604279995, 4.7846715e-08, 0.796772063, -5.60956082e-08, 1, -1.02594171e-07, -0.796772063, -1.06691019e-07, -0.604279995)
+
+	wait(.5)
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3892.05078, 58.135788, -10897.7168, -0.0523766726, 4.71356421e-09, 0.998627424, -8.22689206e-09, 1, -5.15153253e-09, -0.998627424, -8.48541948e-09, -0.0523766726)
+
+	wait(.5)
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3898.89722, 58.5592308, -10893.4951, -0.613988996, -6.99316369e-11, 0.789314568, 8.68355388e-10, 1, 7.64070918e-10, -0.789314568, 1.15453669e-09, -0.613988996)
+
+	wait(.5)
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3906.95435, 54.7799225, -10904.9873, -0.974883735, -8.77387762e-08, 0.22271429, -7.11755277e-08, 1, 8.23966602e-08, -0.22271429, 6.44753584e-08, -0.974883735)
+
+	wait(.5)
+
+	p1.CFrame = pos
+end)
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 291, 0, 50)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Batman GUI"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 31.000
+
+Admin.Name = "Admin"
+Admin.Parent = Main
+Admin.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Admin.BorderSizePixel = 0
+Admin.Position = UDim2.new(0.580756009, 0, 0.267912775, 0)
+Admin.Size = UDim2.new(0, 122, 0, 39)
+Admin.Font = Enum.Font.SourceSans
+Admin.Text = "Admin"
+Admin.TextColor3 = Color3.fromRGB(255, 255, 255)
+Admin.TextSize = 20.000
+Admin.TextWrapped = true
+Admin.MouseButton1Down:connect (function ()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+end)
+
+Tptoroom.Name = "Tptoroom"
+Tptoroom.Parent = Main
+Tptoroom.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Tptoroom.BorderSizePixel = 0
+Tptoroom.Position = UDim2.new(0.580756009, 0, 0.439252317, 0)
+Tptoroom.Size = UDim2.new(0, 122, 0, 39)
+Tptoroom.Font = Enum.Font.SourceSans
+Tptoroom.Text = "Tp to room"
+Tptoroom.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tptoroom.TextSize = 20.000
+Tptoroom.TextWrapped = true
+Tptoroom.MouseButton1Down:connect (function ()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3339.19751, 66.5499649, -10936.8662, -0.904603779, 1.03928099e-09, -0.426253498, -5.89941118e-09, 1, 1.49580259e-08, 0.426253498, 1.60457301e-08, -0.904603779)
+end)
+
+Tptobase.Name = "Tptobase"
+Tptobase.Parent = Main
+Tptobase.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Tptobase.BorderSizePixel = 0
+Tptobase.Position = UDim2.new(0, 0, 0.439252317, 0)
+Tptobase.Size = UDim2.new(0, 122, 0, 39)
+Tptobase.Font = Enum.Font.SourceSans
+Tptobase.Text = "Tp to base"
+Tptobase.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tptobase.TextSize = 20.000
+Tptobase.TextWrapped = true
+Tptobase.MouseButton1Down:connect (function ()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3934.69263, 54.7799225, -10968.5225, 0.191601321, 1.18762927e-07, -0.98147285, -1.58240621e-08, 1, 1.17915661e-07, 0.98147285, -7.06190928e-09, 0.191601321)
+end)
+
+ImageLabel.Parent = Main
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0, 0, 0.700934589, 0)
+ImageLabel.Size = UDim2.new(0, 291, 0, 96)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=9546689"
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 0.560747683, 0)
+TextLabel_2.Size = UDim2.new(0, 291, 0, 45)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Made by Dominos Employee"
+TextLabel_2.TextColor3 = Color3.fromRGB(95, 95, 95)
+TextLabel_2.TextSize = 14.000
